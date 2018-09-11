@@ -1,5 +1,5 @@
 class Animals():
-    """Common class of animals"""
+    '''Common class of animals'''
 
     def __init__(self, name: str, food: str, weight: float, voice: str):
         self.name = name
@@ -27,7 +27,7 @@ class Animals():
 
 
 class Birds(Animals):
-    """Class of birds"""
+    '''Class of birds'''
 
     def __init__(self, name: str, food: str, weight: float, voice: str, num_eggs: int):
         super().__init__(name, food, weight, voice)
@@ -44,25 +44,25 @@ class Birds(Animals):
 
 
 class Artiodactyls(Animals):
-    """Class of Artodactils"""
+    '''Class of Artodactils'''
 
     pass
 
 class Wool(Artiodactyls):
-    """Class of wool"""
+    '''Class of wool'''
 
     def __init__(self, name: str, food: str, weight: float, voice: str, num_wool: int):
         super().__init__(name, food, weight, voice)
         self.num_wool = num_wool
 
     def get_wool(self):
-        num_milk = self.num_wool
-        self.num_milk = 0
-        return num_milk
+        num_wool = self.num_wool
+        self.num_wool = 0
+        return num_wool
 
 
 class Dairy(Artiodactyls):
-    """Class of Dairy"""
+    '''Class of Dairy'''
 
     def __init__(self, name: str, food: str, weight: float, voice: str, num_milk: int):
         super().__init__(name, food, weight, voice)
